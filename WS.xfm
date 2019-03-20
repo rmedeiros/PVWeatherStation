@@ -1,0 +1,485 @@
+<cm:consulmodel xmlns:cm="http://www.pure-systems.com/consul/model" cm:id="iZDYEoOJvFKXojv_z" cm:version="1.5" cm:type="ps:fm">
+  <cm:head>
+    <cm:properties>
+      <cm:property cm:id="iWHFXMuJOQNIcqohv" cm:type="ps:string" cm:invisible="true" cm:name="ps:version">
+        <cm:constant cm:id="iEXpJbdlxZuo8vJnm" cm:type="ps:string">1.0</cm:constant>
+      </cm:property>
+      <cm:property cm:id="iZeUDKnWl61Hb3RcD" cm:type="ps:string" cm:invisible="true" cm:name="ps:name">
+        <cm:constant cm:id="i8300ZwZ7d4B0Gofe" cm:type="ps:string">WeatherStationFeatures</cm:constant>
+      </cm:property>
+      <cm:property cm:id="ihhBCBOCOwkKX3QLI" cm:type="ps:string" cm:invisible="true" cm:name="ps:author">
+        <cm:constant cm:id="iP8RpyfzyJt-UlJce" cm:type="ps:string">danilo</cm:constant>
+      </cm:property>
+      <cm:property cm:id="iKI0M7erlgt_Lw7l8" cm:type="ps:date" cm:invisible="true" cm:name="ps:created">
+        <cm:constant cm:id="ij72wjjF2UbEIsesK" cm:type="ps:date">2009-11-20T15:20:30Z</cm:constant>
+      </cm:property>
+      <cm:property cm:id="iJK57KyxHpK1Z9cXz" cm:type="ps:bug" cm:inheritable="true" cm:fixed="true" cm:name="mks:IssueTracker">
+        <cm:constant cm:id="iAWq8T_J-Tq2xKBLy" cm:type="ps:bug">http://192.168.47.130:7001/</cm:constant>
+      </cm:property>
+    </cm:properties>
+  </cm:head>
+  <cm:elements cm:rootid="ijpwZFIlDeuk-F88n">
+    <cm:element cm:id="ijpwZFIlDeuk-F88n" cm:name="WeatherStation" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="iUct7FAVX7wBrjFtL" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="i0BMoR8b27u8eJPh1" cm:class="ps:children">
+        <cm:relation cm:id="i6o_cW77tHelSuxXZ" cm:type="ps:mandatory">
+          <cm:target cm:id="ipf7OM2eKL8BNa9v5">./i3o2RSj4Fg7d7nNlj</cm:target>
+          <cm:target cm:id="ifNl8acuPP1N84IdM">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+        <cm:relation cm:id="idVuxQJyQALq6kJxN" cm:type="ps:optional">
+          <cm:target cm:id="iEhEYa5gwqdMQD8Nw">./iBFyOWLYHFpADbYjX</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="i7Prw9uTUynC6lr78" cm:mimetype="text/plain" cm:encoding="utf-8">Weather Station</cm:mimedesc>
+        <cm:mimedesc cm:id="i1f4VGBG85s5_mDVx" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Wetterstation</cm:mimedesc>
+        <cm:mimedesc cm:id="ixvEUamQFidyNj4lZ" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">氣象站</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ii8D0Gk3FIhXMVm1w" cm:name="English" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="iJq93NMUfIGX89Zx8" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ihpUugU36P4j2pQ_L" cm:class="ps:parents">
+        <cm:relation cm:id="iZQtuXLtEYj05g90B" cm:type="ps:parent">
+          <cm:target cm:id="izpohVVXois1Ap-vi">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="imsMJ7fYqk2w3JsMd" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Englisch</cm:mimedesc>
+        <cm:mimedesc cm:id="iYKLsgq6HmfoMUwOe" cm:mimetype="text/plain" cm:encoding="utf-8">English</cm:mimedesc>
+        <cm:mimedesc cm:id="irKPjPk6_t_2r4HEr" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">英</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iypo4fjbnzCe3-d-j" cm:name="Gale" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="i1JzoTZqgvrdrtJvn" cm:class="ps:dependencies">
+        <cm:relation cm:id="iWW37-gm6yp3Hfxio" cm:type="ps:requires">
+          <cm:target cm:id="iAn20nsT3nGXNiop-">./iiB5wK-h-iipDy4tU</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iTkL-LM1G66pw6xOz" cm:class="ps:parents">
+        <cm:relation cm:id="iS9ZN98iUG8gRog36" cm:type="ps:parent">
+          <cm:target cm:id="izXURZuUTIiuXOYWu">./iBFyOWLYHFpADbYjX</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iEbFTNJNev65_lpoh" cm:mimetype="text/plain" cm:encoding="utf-8">Gale / Strong Wind</cm:mimedesc>
+        <cm:mimedesc cm:id="iD7DyxnORH6QCYe8W" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Sturm / Starker Wind</cm:mimedesc>
+        <cm:mimedesc cm:id="ieUNGcCl7dQVxoHtc" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">烈風 / 強風</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ilpiLoRjAhseJSQP4" cm:name="German" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ib6qOUWrqZOE4mFzU" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ihK3DDnxcLXLuk3Y2" cm:class="ps:parents">
+        <cm:relation cm:id="ivBwL_BhuKMcySQ3J" cm:type="ps:parent">
+          <cm:target cm:id="iKby1YUodb-G5xrKm">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="itxmDPlpP1l4Ed8wA" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Deutsch</cm:mimedesc>
+        <cm:mimedesc cm:id="i0Yo-wdFvQgQOeTvT" cm:mimetype="text/plain" cm:encoding="utf-8">German</cm:mimedesc>
+        <cm:mimedesc cm:id="igimqjwj4MufVQLIt" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">德國</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iwG8HrEyXal5SlgdL" cm:name="Heat" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ig8kIDoVxPhWnCVw-" cm:class="ps:dependencies">
+        <cm:relation cm:id="iSpPKvqkuIap_2_Wq" cm:type="ps:requires">
+          <cm:target cm:id="ipIOc6WRlEYo6wFI_">iZDYEoOJvFKXojv_z/iI3TBWouTV2fskyik</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iW769iUXoh-xvlnBf" cm:class="ps:parents">
+        <cm:relation cm:id="iprCIKhSb2A0HzFC6" cm:type="ps:parent">
+          <cm:target cm:id="iVovKhF6CFP31Se0V">./iBFyOWLYHFpADbYjX</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="i7vbjiLd0L9d4rxod" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Wärme</cm:mimedesc>
+        <cm:mimedesc cm:id="iHIxcWeUsE8PgRK-B" cm:mimetype="text/plain" cm:encoding="utf-8">Heat</cm:mimedesc>
+        <cm:mimedesc cm:id="ivxnHXAvxoVoYAqm5" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">熱量</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iI3TBWouTV2fskyik" cm:name="Temperature" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ibRjCZn4sNIJwikFW" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iRPCG8MYgnt7q7Izg" cm:class="ps:parents">
+        <cm:relation cm:id="iCiTxu-06iwhs5SWm" cm:type="ps:parent">
+          <cm:target cm:id="ipEntHNEfRRUFEXtl">./i3o2RSj4Fg7d7nNlj</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iifpPeprc0v5RqpAT" cm:class="ps:children">
+        <cm:relation cm:id="iA4lImVBIIvIPtCIP" cm:type="ps:optional" cm:range="[0,n]">
+          <cm:target cm:id="i4o0XIm1Z5KCm9eNx">./iM8DxJVrjLJU0xkUM</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iyEiEevX1mqjKK4Ln" cm:type="ps:integer" cm:name="max">
+          <cm:constant cm:id="iD31AzT2GENrMNHZr" cm:type="ps:integer">60</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i9UhBW3FFVBiTXpHz" cm:type="ps:integer" cm:name="warn">
+          <cm:constant cm:id="iH6UwPvEDjUnzHHuk" cm:type="ps:integer">45</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ikoNhrrTIUbTo0FOb" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Temperatur</cm:mimedesc>
+        <cm:mimedesc cm:id="ieD7eeRBWGFR08jgH" cm:mimetype="text/plain" cm:encoding="utf-8">Temperature</cm:mimedesc>
+        <cm:mimedesc cm:id="i8sIHBkhbWkY7GS62" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">溫度</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iiB5wK-h-iipDy4tU" cm:name="WindSpeed" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="i8P0fSsnFag0_li4u" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iO40dkh-OaSCZ421I" cm:class="ps:parents">
+        <cm:relation cm:id="iYiQwjmbjfWiVXBHB" cm:type="ps:parent">
+          <cm:target cm:id="irlOd__5QTnNNhdAv">./i3o2RSj4Fg7d7nNlj</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iNaEVHPpRSnCvL5NI" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Windgeschwindigkeit</cm:mimedesc>
+        <cm:mimedesc cm:id="iHWi1wrCb1MsyFaO5" cm:mimetype="text/plain" cm:encoding="utf-8">Wind Speed</cm:mimedesc>
+        <cm:mimedesc cm:id="iZfE6DZK_gkSqTdhp" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">風速</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iBFyOWLYHFpADbYjX" cm:name="Warnings" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ik1Ts9q-qzD6vDWrM" cm:class="ps:parents">
+        <cm:relation cm:id="i40l58FmbCp2sRQsR" cm:type="ps:parent">
+          <cm:target cm:id="i25aP7ymg_ItPo9bk">./ijpwZFIlDeuk-F88n</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iSfXGEVzH84zRHTkE" cm:class="ps:children">
+        <cm:relation cm:id="iVahZXQn0wiD8UaYy" cm:type="ps:or">
+          <cm:target cm:id="ikXLLHgN9H57lNZbX">./iypo4fjbnzCe3-d-j</cm:target>
+          <cm:target cm:id="iP6uA8pDxUM5eb100">./iwG8HrEyXal5SlgdL</cm:target>
+          <cm:target cm:id="iuPzkNfz7rbso247t">./iXmZo1nfPQkI4tJZ-</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i3rBnUSxEmCm9yMkI" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i5uYXkQU_wKA9YvGw" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ioBUM3V-8DsB4283y" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iqx-6g91oyAzO2R5L" cm:type="ps:datetime">2019-03-20T11:58:35.940Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iZr_JpwR40n-7xiLe" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i8akzx4IjGe7Z6Vjj" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ijJeg6JbwPfRsCVVO" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="ihMddKbXB28yCvSsR" cm:type="ps:datetime">2019-03-20T11:58:35.940Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iHKHrEIoXrAcR4ZEU" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Warnungen</cm:mimedesc>
+        <cm:mimedesc cm:id="iOZHYRGxXpyRB40We" cm:mimetype="text/plain" cm:encoding="utf-8">Warnings</cm:mimedesc>
+        <cm:mimedesc cm:id="iGf2hR_B-451wsygG" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">警告</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i3o2RSj4Fg7d7nNlj" cm:name="Sensors" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="iv7-E2J5QHHyMbsWH" cm:class="ps:parents">
+        <cm:relation cm:id="iJmZCR5PWumwngsu1" cm:type="ps:parent">
+          <cm:target cm:id="i3obcF0ZbKDVEp8OV">./ijpwZFIlDeuk-F88n</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iBLiTjmkBj0Sq7gjH" cm:class="ps:children">
+        <cm:relation cm:id="i3Kb3awLvOXTnizu3" cm:type="ps:or" cm:range="[1,n]">
+          <cm:target cm:id="iZ7XaUfskMX96gLsN">./iI3TBWouTV2fskyik</cm:target>
+          <cm:target cm:id="iR_SUhNUsw9szH4ny">./iiB5wK-h-iipDy4tU</cm:target>
+          <cm:target cm:id="iE0jxNQg6nWFRQiKC">./iFIt10gOEo9ATa8dr</cm:target>
+          <cm:target cm:id="i38kuJTFYY21xedlJ">./iJUEY_grWkNJgRIC6</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="igoz0WmNW__9qv1xT" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iwDlcMkWUgeCCmVci" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="in1luGlhklJ1htvhM" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i6oR1__j_zZp50vPn" cm:type="ps:datetime">2019-03-20T11:58:20.103Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i92WPNShaiIZQKKQk" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iTjf5eiaQmmKfkl_f" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iMJtE1RVmfE3YZXQw" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iuIB1x9rum5U2TKck" cm:type="ps:datetime">2019-03-20T11:58:20.103Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iX8lAzIG6w74gctlZ" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Sensoren</cm:mimedesc>
+        <cm:mimedesc cm:id="iv63ZAbiv4NxJNSa2" cm:mimetype="text/plain" cm:encoding="utf-8">Sensors</cm:mimedesc>
+        <cm:mimedesc cm:id="io0wGZKoJVjaS3Nc-" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">傳感器</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ir48hEVg8Y2CeMjeO" cm:name="Languages" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="iK6nacskSmm9_-LRX" cm:class="ps:parents">
+        <cm:relation cm:id="i0EU4Fm0Oj75HrV1O" cm:type="ps:parent">
+          <cm:target cm:id="iQSE7N64i_io47WKY">./ijpwZFIlDeuk-F88n</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i4qrqb1fvNO-J3H6C" cm:class="ps:children">
+        <cm:relation cm:id="iwp_T3MMzykeawDXy" cm:type="ps:alternative">
+          <cm:target cm:id="i0i0g4kG0cF9XGDre">./ii8D0Gk3FIhXMVm1w</cm:target>
+          <cm:target cm:id="ixT59pXDjMq5jcpMX">./ilpiLoRjAhseJSQP4</cm:target>
+          <cm:target cm:id="iIWfSMD8CKu3wDGv1">./iE6pyBndKCSIRVDNH</cm:target>
+          <cm:target cm:id="iRvtxp1KlpWCmdh7u">./i-_JdpVr47R8BiNpJ</cm:target>
+          <cm:target cm:id="iuWdLTDTE8nY8ys7B">./ivUMvIxtHcJA8PzUX</cm:target>
+          <cm:target cm:id="i-k_BmFJEpNUGNxMh">./i6IcxhQr5fqJLLBmU</cm:target>
+          <cm:target cm:id="i-efrGmzWVH_eL03K">./iTy7dam1TdSh4u3Kp</cm:target>
+          <cm:target cm:id="ibIY4HdByejXRs1PW">./igkByb550j1_LfBes</cm:target>
+          <cm:target cm:id="iZADpHJD_8JiiBPpN">./i0VrY4ZCPPEl31epI</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iaBTJIPWxJUmobEW7" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iM5wSN_UYj_aegxso" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iIrm0jvAnbXPDXz0v" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iZFaum9xXmd2KkLNc" cm:type="ps:datetime">2019-03-20T11:56:05.114Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iPLJkZWb1d2lSjwN0" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iTN-TcnDQjcgtpq_n" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iL1mu3h2mdv-S9jeO" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="icxndRlI_xPcyuR3I" cm:type="ps:datetime">2019-03-20T11:56:13.303Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iyHsia9gH6QrsS0cs" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Sprachen</cm:mimedesc>
+        <cm:mimedesc cm:id="i4AP59yT3bb55XKkP" cm:mimetype="text/plain" cm:encoding="utf-8">Languages</cm:mimedesc>
+        <cm:mimedesc cm:id="i6UPdO_YMrEFNJe07" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">語言</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iFIt10gOEo9ATa8dr" cm:name="AirPressure" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="iYYhd1J0UsCcp04cL" cm:class="ps:parents">
+        <cm:relation cm:id="iolTrozZzvdbC-p4e" cm:type="ps:parent">
+          <cm:target cm:id="iCKI32v-w2GjgjsR4">./i3o2RSj4Fg7d7nNlj</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:vname>
+        <cm:mimedesc cm:id="iUnhcD5s41lHNfARD" cm:mimetype="text/plain" cm:lang="de" cm:encoding="utf-8">Luftdruck</cm:mimedesc>
+        <cm:mimedesc cm:id="iQrkt0WT1TxMB30pA" cm:mimetype="text/plain" cm:encoding="utf-8">Air Pressure</cm:mimedesc>
+        <cm:mimedesc cm:id="iY4sxGvO5nID_EXOz" cm:mimetype="text/plain" cm:lang="zh" cm:encoding="utf-8">空氣壓力</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iM8DxJVrjLJU0xkUM" cm:name="Color" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="iB9O7gg2pLIYE8QgX" cm:class="ps:parents">
+        <cm:relation cm:id="idZtyONDJtbR4s-_r" cm:type="ps:parent">
+          <cm:target cm:id="i-FaXM9S_wlqRQPWf">./iI3TBWouTV2fskyik</cm:target>
+        </cm:relation>
+      </cm:relations>
+    </cm:element>
+    <cm:element cm:id="iE6pyBndKCSIRVDNH" cm:name="Spanish" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="i4C9tTpE_hUZRiBVU" cm:class="ps:parents">
+        <cm:relation cm:id="iBsTjM0RYpXF8ogIA" cm:type="ps:parent">
+          <cm:target cm:id="iGk61cdId7XIonuNM">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iC3Dyard0Us1S466X" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ijXp6BJPCa7I9ID0X" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i9vkuXz8HJi854P-X" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iZWTvhUQOVRErBpvd" cm:type="ps:datetime">2019-03-20T11:56:05.114Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iznIlK38TwljBwbTo" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i0SA7xt9CFeUkJTC0" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iMW26gLY8Ed4_72MQ" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iPA3a0iNG4dTK8MrH" cm:type="ps:datetime">2019-03-20T11:56:13.302Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i-ymphkzLe3yUBBZc" cm:mimetype="text/plain" cm:encoding="utf-8">Spanish</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i-_JdpVr47R8BiNpJ" cm:name="Portuguese" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ir_GM1sROQeec9D7P" cm:class="ps:parents">
+        <cm:relation cm:id="iKS45x8qvOCAVwzy0" cm:type="ps:parent">
+          <cm:target cm:id="ioyaCE6DvvOX6ACop">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i3clTfMrLjjOhvhYE" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iMSco2Y7Xvfgxk5Ns" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iuyG8UcX0ganHKXyO" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iGuagMh2lNotyoy0l" cm:type="ps:datetime">2019-03-20T11:56:15.702Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iL9oUdfelUeXN3H5P" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iSA6zqo2bwRTulKt_" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ihKlgmEbZkaz1KKjq" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i1qoWHtIZ9qZETZFK" cm:type="ps:datetime">2019-03-20T11:56:48.843Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iFXj8rJ3WHgqDWEbd" cm:mimetype="text/plain" cm:encoding="utf-8">Portuguese</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ivUMvIxtHcJA8PzUX" cm:name="Arabic" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="itMl7MX-P55zxKWQb" cm:class="ps:parents">
+        <cm:relation cm:id="itgne-Z_Ts7F4XBNW" cm:type="ps:parent">
+          <cm:target cm:id="iHC4MtYFXvddvgPve">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iZuCV1oBbSBrKD-J1" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iJ6xBNIJHNXFIEw_S" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iMrNQnwK8rcUUHZ9u" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iF9H3_4OoxPVq-LVP" cm:type="ps:datetime">2019-03-20T11:56:16.981Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iYzpmdQyPYQ8O_90k" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iRtA4VsZPkISqsfXn" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i5c-P0JNgOqRt_FbW" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iHzlaPo9Dt-o7e_7V" cm:type="ps:datetime">2019-03-20T11:56:57.275Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iY7hAYoudsas0QOFm" cm:mimetype="text/plain" cm:encoding="utf-8">Arabic</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i6IcxhQr5fqJLLBmU" cm:name="Chinese" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="irCBIi-I8oVfXGF7b" cm:class="ps:parents">
+        <cm:relation cm:id="is7B3RAaMaR8if1CC" cm:type="ps:parent">
+          <cm:target cm:id="iSzlkM7tGuy76-Of7">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iDsc9anKHKH1l4fwK" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ijTWN_ydv8wGhGval" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i6N8B86wBcmX3V0LF" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iibwGZNUhWncfpYG7" cm:type="ps:datetime">2019-03-20T11:56:18.157Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iIhfy-am-CKapPDlT" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iHy93OCBeiO9ojtrl" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ioeq2gvitkeFBxtNg" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i62NunZ69OREJae9d" cm:type="ps:datetime">2019-03-20T11:57:06.749Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ijuE14QQa8cG3RJhv" cm:mimetype="text/plain" cm:encoding="utf-8">Chinese</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iTy7dam1TdSh4u3Kp" cm:name="Hindi" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="iRQWyfg3nxE3sOo6z" cm:class="ps:parents">
+        <cm:relation cm:id="iYqVREPZ8wzyFTVfm" cm:type="ps:parent">
+          <cm:target cm:id="i_i7XZ8D2MdLJMXf8">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iGTEtp3PI0AOgbksH" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i_TX4CrGkN-Llr34U" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iF-bIHVaxn5i_fRtN" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ihZcnDcD48H2-Xd2v" cm:type="ps:datetime">2019-03-20T11:56:18.597Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iV_020JOXPODFEWjI" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iGu4Nm01GPbRlw2B5" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iXeLT0HU29FdvpME2" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iGUPekP2fu2RmBHMu" cm:type="ps:datetime">2019-03-20T11:57:17.608Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iOjHLfDsLvcHkPXAx" cm:mimetype="text/plain" cm:encoding="utf-8">Hindi</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="igkByb550j1_LfBes" cm:name="French" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="i3ZzoNhFLU8kRfajB" cm:class="ps:parents">
+        <cm:relation cm:id="iA3mVIqCNvldPjJ7T" cm:type="ps:parent">
+          <cm:target cm:id="itMW4fwFOwhFcJY7u">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iQAkDkNwwpMU0dmKN" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iDZ4klIftQDETPan0" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iOFXKauX2OaPPm3ba" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i5qLuD9nfn0Vsvrcp" cm:type="ps:datetime">2019-03-20T11:57:20.210Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ixLZ44N0AG-6ux1S9" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="itous5cW3MGcKFQ5Q" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iGuQCvUxNaWFTYzsz" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iOUNgJyT1ctbbWCyb" cm:type="ps:datetime">2019-03-20T11:57:28.328Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iJUoGo4ZZ1kntrEUp" cm:mimetype="text/plain" cm:encoding="utf-8">French</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i0VrY4ZCPPEl31epI" cm:name="Italian" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="iQwBuLal0fkjr2skK" cm:class="ps:parents">
+        <cm:relation cm:id="iDoFwmeYR2n1xukJr" cm:type="ps:parent">
+          <cm:target cm:id="i72iXFf74396mbY_a">./ir48hEVg8Y2CeMjeO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iBKVMm96UGtsvQR4r" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iicNGEB1zYtmHprkv" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ipRZrnX9LliJjkCkg" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i0K5L26QBzHJXLAXB" cm:type="ps:datetime">2019-03-20T11:57:20.724Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iAu9Ny_Ut94bqjJ6T" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iNcQ4-EGd1LUqK8_F" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iXhGHVxFFcUSGozrI" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iN0mVpOFomYvgu8Fx" cm:type="ps:datetime">2019-03-20T11:57:35.696Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iEkAx4sFGDAuMTxgd" cm:mimetype="text/plain" cm:encoding="utf-8">Italian</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iJUEY_grWkNJgRIC6" cm:name="Precipitation" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="iydLr3J9vvpbwcUA8" cm:class="ps:parents">
+        <cm:relation cm:id="idWFygNcqDGebhZUc" cm:type="ps:parent">
+          <cm:target cm:id="iZQWyGZF1Je6jtrDw">./i3o2RSj4Fg7d7nNlj</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="it6EEsRG27KJQwbzF" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iJFgS3RuxeF3kflSJ" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iUzIt75-3RAZjloUD" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ih_WPhlj-7vRwjnLX" cm:type="ps:datetime">2019-03-20T11:58:20.103Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iROWJAyiHFWhbL61_" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ivs6QXXtejMICYVDw" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ibpfIwZOJ0O4WQmIz" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iLcpL3fNTjSZ8bLUn" cm:type="ps:datetime">2019-03-20T11:58:20.103Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="itg5MbxK5TNtYj-hm" cm:mimetype="text/plain" cm:encoding="utf-8">Precipitation</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iXmZo1nfPQkI4tJZ-" cm:name="Freezing" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="idYtwYTMhSd5ciW4G" cm:class="ps:parents">
+        <cm:relation cm:id="igPt7dLZ-jqv6TYV1" cm:type="ps:parent">
+          <cm:target cm:id="iIQJzSNboqMlPbsH0">./iBFyOWLYHFpADbYjX</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iIemk0SC6x1bL0CI8" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iKAXS03rkQMhSNIPm" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="izRZss_i8Tsxy5w3X" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i1LA7YBsAzD8eMote" cm:type="ps:datetime">2019-03-20T11:58:35.940Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iOFcrLf7X28L5dvQK" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i5vouyoBvOppsrjtg" cm:type="ps:string">Raul Medeiros</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i1yCj37sxfsxWUpnX" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="icWxAMEM7M5giQ7q0" cm:type="ps:datetime">2019-03-20T11:58:35.940Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iLC7cQ_OcMA4c9_LQ" cm:mimetype="text/plain" cm:encoding="utf-8">Freezing</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+  </cm:elements>
+</cm:consulmodel>
