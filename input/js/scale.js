@@ -37,6 +37,24 @@ function setScale(parent, min, max, unit, partCount) {
 	}
 }
 
+// PV:IFCOND(pv:hasFeature('Freezing') or pv:hasFeature('Heat'))
+function setTemperatureScaleWarnings(warnings) {
+	var dist = (max - min) / (partCount - 1);
+
+	for (i = 0; i < warnings.length; i++) {
+		var element = warnings[i];
+		if (element.className != null && element.className != '' && element.className != null) {
+			if ((number = element.className.match('text_(\\d+)'))) {
+				setElementText(element, Math.round(min + number[1] * dist));
+			}
+			if (element.className == 'unit') {
+				setElementText(element, unit);
+			}
+		}
+	}
+}
+// PV:ENDCOND
+
 function setTitles() {
 	setElementText(document.getElementById('main_title'), mainTitle);
 
