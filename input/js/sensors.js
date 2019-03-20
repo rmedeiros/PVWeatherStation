@@ -7,7 +7,22 @@ function applyPressure() {
 	return false;
 }
 // PV:ENDCOND
-//PV:IFCOND(pv:hasFeature('WindSpeed'))
+
+// PV:IFCOND(pv:hasFeature('AirPressure') and pv:hasFeature('Temperature') and pv:hasFeature('WindSpeed'))
+function activateMainSensors() {
+
+	var main_sensors = document.getElementById("main_sensors_list");
+
+	activateSensors(main_sensors);
+	// PV:IFCOND(pv:hasFeature('Precipitation'))
+	activatePrecipitation();
+	// PV:ENDCOND
+
+	return false;
+}
+// PV:ENDCOND
+
+// PV:IFCOND(pv:hasFeature('WindSpeed'))
 var windMeasure = 0;
 function applyWindSpeed() {
 	var measureText = document.getElementById("w_measure");
@@ -30,13 +45,12 @@ function applyTachoValue(min, max, measureText, pointer) {
 		var intValue = checkMeasure(min, max, measure);
 		if (isNaN(intValue)) {
 			return false;
-	  }
+		}
 
 		intValue -= min;
 		if (intValue % divisor < c) {
 			intValue -= intValue % divisor;
-		}
-		else {
+		} else {
 			intValue += divisor - intValue % divisor;
 		}
 
@@ -77,7 +91,8 @@ function checkMeasure(min, max, measure) {
 	if (measure == "" || measure == null) {
 		return NaN;
 	}
-	if (isNaN(parseInt(measure)) || parseInt(measure) < min || parseInt(measure) > max) {
+	if (isNaN(parseInt(measure)) || parseInt(measure) < min
+			|| parseInt(measure) > max) {
 		alert("Bitte eine Zahl zwischen " + min + " und " + max + " eingeben!");
 		return NaN;
 	}
@@ -87,6 +102,14 @@ function checkMeasure(min, max, measure) {
 function setWarnings() {
 	warningText = '';
 	
+	// PV:IFCOND(pv:hasFeature('Freezing') and pv:hasFeature('Heat') and pv:hasFeature('Gale'))
+	setAllWarnings();
+	// PV:ENDCOND
+	// PV:IFCOND(pv:hasFeature('Freezing'))
+	if (isNaN(tempFreez) == false && tempMeasure < tempFreez) {
+		warningText += freezWarning;
+	}
+	// PV:ENDCOND
 	// PV:IFCOND(pv:hasFeature('Heat'))
 	if (isNaN(tempLimit) == false && tempMeasure > tempLimit) {
 		warningText += tempWarning;
@@ -114,8 +137,7 @@ function setWarnings() {
 		// PV:ENDCOND
 
 		setElementText(element, warningText);
-	}
-	else {
+	} else {
 		setElementText(element, '');
 	}
 }
