@@ -22,7 +22,7 @@ function activateMainSensors() {
 }
 // PV:ENDCOND
 
-// PV:IFCOND(pv:hasFeature('WindSpeed'))
+// PV:IFCOND(pv:hasFeature('WindSpeed') and pv:hasFeature('Temperature')and pv:hasFeature('AirPressure') )
 var windMeasure = 0;
 function applyWindSpeed() {
 	var measureText = document.getElementById("w_measure");
@@ -35,12 +35,12 @@ function applyWindSpeed() {
 }
 // PV:ENDCOND
 
-// PV:IFCOND(pv:hasFeature('WindSpeed') or pv:hasFeature('AirPressure'))
+// PV:IFCOND(pv:hasFeature('WindSpeed') or pv:hasFeature('AirPressure') or pv:hasFeature('Temperature'))
 function applyTachoValue(min, max, measureText, pointer) {
 	var divisor = Math.round((max - min) / 13);
-	var c = Math.round(divisor / 2);
-
-	if (measureText && pointer) {
+	var c = Math.round(divisor / 4);
+    
+	if (measureText && pointer && c>4) {
 		var measure = measureText.value;
 		var intValue = checkMeasure(min, max, measure);
 		if (isNaN(intValue)) {
@@ -53,7 +53,7 @@ function applyTachoValue(min, max, measureText, pointer) {
 		} else {
 			intValue += divisor - intValue % divisor;
 		}
-
+		updateMeseure(intValue);
 		intValue /= divisor;
 		pointer.style.background = "url('images/n_" + intValue + ".png')";
 	}
