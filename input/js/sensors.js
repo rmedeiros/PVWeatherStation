@@ -24,12 +24,16 @@ function activateMainSensors() {
 
 // PV:IFCOND(pv:hasFeature('WindSpeed') and pv:hasFeature('Temperature')and pv:hasFeature('AirPressure') )
 var windMeasure = 0;
-function applyWindSpeed() {
+function applySensors() {
 	var measureText = document.getElementById("w_measure");
 	windMeasure = measureText.value;
+    measureText = document.getElementById("t_measure");
+	tempMeasure = measureText.value;
+    measureText = document.getElementById("a_measure");
+	airMeasure = measureText.value;
 	var pointer = document.getElementById("w_point");
-
-	applyTachoValue(minWind, maxWind, measureText, pointer);
+	
+	applyTachoValue(minWind, maxWind, measureText, airMeasure, tempMeasure, pointer);
 	setWarnings();
 	return false;
 }
